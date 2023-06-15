@@ -16,7 +16,7 @@ router.get('/posts', async (req, res) => {
       syncTime: true,
     }
   ).sort({ syncTime: -1 });
-  console.log(posts);
+  // console.log(posts);
   // .select('postId title author content syncTime');
   // find(query, projection)는 인자가 없으면 모든 도큐먼트를 조회, 리턴값은 cursor 객체.
   // query는 조회 기준, projection은 조회한 도큐먼트를 표시할 필드.
